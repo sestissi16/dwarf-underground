@@ -21,14 +21,6 @@
   margin: 20px;
 }
 
-.logo img {
-  height: 40px;
-  filter: invert(100%);
-  opacity: .7;
-}
-
-
-
 @media screen and (min-width: 40em) {
   .headline {
     margin-top: 50px;
