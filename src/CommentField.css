@@ -1,0 +1,17 @@
+.input-group-field{
+    width: 26em;
+}
+.input-group-button{
+    width:12em;
+    display: inline-block;
+    background-color: #CFB53B;
+    font-weight: 700;
+    color: white;
+    width: 12em;
+    margin-right: 20px;
+    font-family: 'Cinzel Decorative', cursive;
+}
+.input-group-button:hover{
+    background-color: #E9CF55;
+    color: white;    
+}
