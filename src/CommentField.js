@@ -16,17 +16,6 @@ class CommentField extends Component{
             comment: ev.target.value
         })
     }
-    // handleSubmit(ev){
-    //     ev.preventDefault()
-    //     const comments = [...this.state.comments]
-    //     comments.push(this.commentInput.value)
-    //     this.setState({ comments })
-    //     //ev.currentTarget.reset() doesn't work says reset is not a function
-
-    // }
-    // renderComments(comment, i){
-    //     return <li key={i}>{comment}</li>
-    // }
     addComment(ev){
         const comment = {
             timestamp: new Date(),
@@ -47,10 +36,21 @@ class CommentField extends Component{
                     placeholder="Enter comment here">
                 </textarea>
                 <button onClick={this.addComment} className="button">Submit Comment</button>
+                {this.state.comments.map((comment, i)=> <Comment comment={comment} key={i}/>)}
             </div>
         )
     }
-    //<textarea value=
+    // handleSubmit(ev){
+    //     ev.preventDefault()
+    //     const comments = [...this.state.comments]
+    //     comments.push(this.commentInput.value)
+    //     this.setState({ comments })
+    //     //ev.currentTarget.reset() doesn't work says reset is not a function
+
+    // }
+    // renderComments(comment, i){
+    //     return <li key={i}>{comment}</li>
+    // }
     // render(){
     //     return(
     //         <div>
@@ -67,4 +67,11 @@ class CommentField extends Component{
     // }
 }
 
+function Comment (props){
+    return(
+        <div className="comment">
+            <div>{props.comment.text}</div>
+        </div>
+    )
+}
 export default CommentField

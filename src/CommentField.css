@@ -1,17 +1,32 @@
-.input-group-field{
-    width: 26em;
+.comments {
+  margin-top: 25px;
 }
-.input-group-button{
-    width:12em;
-    display: inline-block;
-    background-color: #CFB53B;
-    font-weight: 700;
-    color: white;
-    width: 12em;
-    margin-right: 20px;
-    font-family: 'Cinzel Decorative', cursive;
+
+.comments button {
+  background-color: #E9CF55;
 }
-.input-group-button:hover{
-    background-color: #E9CF55;
-    color: white;    
+
+.comments button:hover {
+  background-color: #B69C22;
+}
+
+.comment {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.comment:first-of-type {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.comment:last-child {
+  border-bottom: 1px solid #ccc;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.comment:nth-child(even) {
+  background-color: #f9f9f9;
 }
