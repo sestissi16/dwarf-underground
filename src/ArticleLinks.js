@@ -16,6 +16,8 @@ class ArticleLinks extends Component{
         else{
             this.setState({showComments: true})
         }
+        //This does the same thing as the if/else statement
+        //this.setState({showComments: !this.state.showComments}, ()=> console.log(this.state)) <-says when your done with first part run the next function
     }
     render(){
         let comments
@@ -26,6 +28,7 @@ class ArticleLinks extends Component{
                     </div>
                 )
             }
+            //{this.state.showComments ? iftruedothis : elsedothis} <-could use this instead of the if statement above and the {comments} down below
         return(
             <div>
                 <div className="article-links">
@@ -39,6 +42,7 @@ class ArticleLinks extends Component{
                     </a>
                 </div>
                 {comments}
+                
             </div>
         )
     }
