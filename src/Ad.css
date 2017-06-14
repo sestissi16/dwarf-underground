@@ -1,0 +1,17 @@
+.ad h3 {
+  text-align: center;
+  font-weight: 700;
+  color: #333;
+}
+
+.ad h4 {
+  font-weight: 700;
+  color: #333;
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+.ad-text {
+  font-size: .8em;
+  color: #666;
+}
